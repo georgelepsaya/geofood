@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Layout/Header";
+import Cart from "./components/Cart/Cart";
+import Wish from "./components/Wish/Wish";
+import Meals from "./components/Meals/Meals";
 
-function App() {
+const App = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
+  const [wishIsShown, setWishIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
+  const showWishHandler = () => {
+    setWishIsShown(true);
+  };
+
+  const hideWishHandler = () => {
+    setWishIsShown(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {cartIsShown && <Cart onHide={hideCartHandler} />}
+      {wishIsShown && <Wish onHide={hideWishHandler} />}
+      <Header onShowCart={showCartHandler} onShowWish={showWishHandler} />
+      <main>
+        <Meals />
+      </main>
+    </>
   );
-}
+};
 
 export default App;
