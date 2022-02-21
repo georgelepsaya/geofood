@@ -4,6 +4,7 @@ import MealItemForm from "../MealItemForm/MealItemForm";
 
 const MealItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
+  const id = props.id;
 
   return (
     <li className={classes.meal}>
@@ -13,7 +14,7 @@ const MealItem = (props) => {
           <h3>{props.name}</h3>
           <div className={classes.description}>{props.description}</div>
           <div className={classes.price}>{price}</div>
-          <button onClick={props.onShow}>See more</button>
+          <button onClick={() => props.onShow(id)}>See more</button>
         </div>
       </div>
       <div className={classes.form}>

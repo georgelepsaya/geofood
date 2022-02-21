@@ -10,6 +10,8 @@ const App = () => {
   const [wishIsShown, setWishIsShown] = useState(false);
   const [infoIsShown, setInfoIsShown] = useState(false);
 
+  const [mealToShow, setMealToShow] = useState("");
+
   const showCartHandler = () => {
     setCartIsShown(true);
   };
@@ -26,7 +28,8 @@ const App = () => {
     setWishIsShown(false);
   };
 
-  const showInfoHandler = () => {
+  const showInfoHandler = (id) => {
+    setMealToShow(id);
     setInfoIsShown(true);
   };
 
@@ -38,7 +41,7 @@ const App = () => {
     <>
       {cartIsShown && <Cart onHide={hideCartHandler} />}
       {wishIsShown && <Wish onHide={hideWishHandler} />}
-      {infoIsShown && <MealInfo onHide={hideInfoHandler} />}
+      {infoIsShown && <MealInfo onHide={hideInfoHandler} id={mealToShow} />}
       <Header onShowCart={showCartHandler} onShowWish={showWishHandler} />
       <main>
         <Meals onShowInfo={showInfoHandler} />

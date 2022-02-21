@@ -28,7 +28,7 @@ const DUMMY_MEALS = [
   },
   {
     id: "m3",
-    name: "Sacivi",
+    name: "Satsivi",
     description: "Chicken covered with sauce made of nuts.",
     price: 7.99,
     imgsrc: sacivi,
