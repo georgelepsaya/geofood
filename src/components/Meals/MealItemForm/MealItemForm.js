@@ -12,7 +12,7 @@ const MealItemForm = (props) => {
     const enteredAmount = +amountInputRef.current.value;
 
     if (
-      enteredAmount.trim().length === 0 ||
+      enteredAmount.toString().trim().length === 0 ||
       enteredAmount < 1 ||
       enteredAmount > 10
     ) {
