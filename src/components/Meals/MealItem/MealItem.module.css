@@ -64,6 +64,25 @@
 
 .info {
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info button {
+  border: 1px solid #6ba7dc;
+  background-color: white;
+  color: #6ba7dc;
+  border-radius: 12px;
+  padding: 3px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font: inherit;
+  max-width: 110px;
+}
+
+.info button:hover {
+  background-color: #6ba7dc;
+  color: white;
 }
 
 .meal img {

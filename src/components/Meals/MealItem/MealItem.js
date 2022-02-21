@@ -13,11 +13,12 @@ const MealItem = (props) => {
           <h3>{props.name}</h3>
           <div className={classes.description}>{props.description}</div>
           <div className={classes.price}>{price}</div>
+          <button onClick={props.onShow}>See more</button>
         </div>
       </div>
       <div className={classes.form}>
         <MealItemForm id={props.id} />
-        <button>Add to wish list</button>
+        <button>I like it!</button>
       </div>
     </li>
   );

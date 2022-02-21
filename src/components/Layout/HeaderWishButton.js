@@ -8,7 +8,7 @@ const HeaderWishButton = (props) => {
       <span className={classes.icon}>
         <FaHeart />
       </span>
-      <span>Wish List</span>
+      <span>Liked</span>
       <span className={classes.badge}>0</span>
     </button>
   );

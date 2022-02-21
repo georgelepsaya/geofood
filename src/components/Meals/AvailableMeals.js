@@ -50,9 +50,10 @@ const DUMMY_MEALS = [
   },
 ];
 
-const AvailableMeals = () => {
+const AvailableMeals = (props) => {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
+      onShow={props.onShow}
       id={meal.id}
       key={meal.id}
       name={meal.name}
