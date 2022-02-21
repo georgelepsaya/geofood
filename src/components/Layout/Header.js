@@ -10,7 +10,7 @@ const Header = (props) => {
     <>
       <header className={classes.header}>
         <div className={classes.name}>
-          <img src={georgiaFlag} width="60" />
+          <img src={georgiaFlag} width="90" className={classes.flag} />
           <h1>GeoFood</h1>
         </div>
         <div className={classes.menu}>
