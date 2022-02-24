@@ -1,0 +1,43 @@
+.wish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b5c3cf;
+  padding: 1rem 0;
+}
+
+.wish-item:last-of-type {
+  border: none;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wishImg {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 12px;
+  margin-right: 25px;
+}
+
+.wish-item h2 {
+  min-width: 300px;
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+}
+
+.summary {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.price {
+  font-weight: bold;
+  color: #576572;
+}
