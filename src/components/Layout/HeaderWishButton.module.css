@@ -17,7 +17,7 @@
 .button:hover,
 .button:active {
   background-color: #ffffff;
-  border: 2px solid #6ba7dc;
+  border: 2px solid #fff;
   color: #6ba7dc;
 }
 
