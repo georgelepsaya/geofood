@@ -5,6 +5,7 @@ import Wish from "./components/Wish/Wish";
 import MealInfo from "./components/MealInfo/MealInfo";
 import Meals from "./components/Meals/Meals";
 import CartProvider from "./store/CartProvider";
+import WishProvider from "./store/WishProvider";
 
 const App = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -39,15 +40,17 @@ const App = () => {
   };
 
   return (
-    <CartProvider>
-      {cartIsShown && <Cart onHide={hideCartHandler} />}
-      {wishIsShown && <Wish onHide={hideWishHandler} />}
-      {infoIsShown && <MealInfo onHide={hideInfoHandler} id={mealToShow} />}
-      <Header onShowCart={showCartHandler} onShowWish={showWishHandler} />
-      <main>
-        <Meals onShowInfo={showInfoHandler} />
-      </main>
-    </CartProvider>
+    <WishProvider>
+      <CartProvider>
+        {cartIsShown && <Cart onHide={hideCartHandler} />}
+        {wishIsShown && <Wish onHide={hideWishHandler} />}
+        {infoIsShown && <MealInfo onHide={hideInfoHandler} id={mealToShow} />}
+        <Header onShowCart={showCartHandler} onShowWish={showWishHandler} />
+        <main>
+          <Meals onShowInfo={showInfoHandler} />
+        </main>
+      </CartProvider>
+    </WishProvider>
   );
 };
 
