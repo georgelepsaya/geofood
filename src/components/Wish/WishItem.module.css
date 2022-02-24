@@ -10,6 +10,32 @@
   border: none;
 }
 
+.place {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.place button {
+  background-color: white;
+  border: 2px solid #6ba7dc;
+  color: #6ba7dc;
+  min-height: 35px;
+  min-width: 70px;
+  border-radius: 10px;
+}
+
+.place button:hover {
+  cursor: pointer;
+  background-color: #6ba7dc;
+  border: 2px solid #6ba7dc;
+  color: #fff;
+  min-height: 35px;
+  min-width: 70px;
+  border-radius: 10px;
+}
+
 .info {
   display: flex;
   justify-content: flex-start;

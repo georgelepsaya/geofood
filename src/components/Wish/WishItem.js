@@ -7,11 +7,13 @@ const WishItem = (props) => {
 
   return (
     <li className={classes["wish-item"]}>
-      <div className={classes.info}>
-        <img className={classes.wishImg} src={props.item.imgsrc} />
-        <div className={classes.summary}>
-          <h2>{props.item.name}</h2>
-          <span className={classes.price}>{price}</span>
+      <div className={classes.place}>
+        <div className={classes.info}>
+          <img className={classes.wishImg} src={props.item.imgsrc} />
+          <div className={classes.summary}>
+            <h2>{props.item.name}</h2>
+            <span className={classes.price}>{price}</span>
+          </div>
         </div>
         <button onClick={props.onRemove}>Delete</button>
       </div>
