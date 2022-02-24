@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/geofood/static/css/main.eb0a037c.css",
+    "main.js": "/geofood/static/js/main.1cee230f.js",
+    "static/media/food.jpg": "/geofood/static/media/food.d9048ca62f299f09e846.jpg",
+    "static/media/sacivi.jpg": "/geofood/static/media/sacivi.5a177b191af90d9bfedb.jpg",
+    "static/media/adjar.jpg": "/geofood/static/media/adjar.c34b2f00c5ee92395341.jpg",
+    "static/media/chkmeruli.jpg": "/geofood/static/media/chkmeruli.a4cd24c193bd0ab502a5.jpg",
+    "static/media/khachapuri.jpg": "/geofood/static/media/khachapuri.7eba779a0dbe9d1b5ae0.jpg",
+    "static/media/khinkali.jpg": "/geofood/static/media/khinkali.4dc00d18162dd4a5bd48.jpg",
+    "static/media/georgia.svg": "/geofood/static/media/georgia.31ba73c9423afa9a1f51ba799aeeb547.svg",
+    "index.html": "/geofood/index.html",
+    "main.eb0a037c.css.map": "/geofood/static/css/main.eb0a037c.css.map",
+    "main.1cee230f.js.map": "/geofood/static/js/main.1cee230f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb0a037c.css",
+    "static/js/main.1cee230f.js"
+  ]
+}
